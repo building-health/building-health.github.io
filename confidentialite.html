@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Building Health</title>
+<meta name="description" content="Politique de confidentialité de Building Health.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --background: #F4F7F6;
+    --surface: #FFFFFF;
+    --text: #102A25;
+    --text-secondary: #5D6E69;
+    --text-muted: #87948F;
+    --primary: #176B5B;
+    --border: #E3EAE7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0D1714;
+      --surface: #16231F;
+      --text: #F4F7F6;
+      --text-secondary: #B7C4C0;
+      --text-muted: #8A9995;
+      --primary: #79B9A9;
+      --border: #24332E;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--background);
+    color: var(--text-secondary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 32px 20px 64px;
+  }
+
+  main {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 40px 32px;
+  }
+
+  .brand {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  .brand a { text-decoration: none; }
+
+  h1 { color: var(--text); font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { color: var(--text); font-size: 20px; margin: 36px 0 8px; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+
+  .updated { color: var(--text-muted); font-size: 14px; margin: 0 0 28px; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 44px;
+    padding-top: 20px;
+  }
+
+  a { color: var(--primary); }
+
+  .doc {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    display: block;
+    margin-top: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+  }
+
+  .doc strong { color: var(--primary); display: block; font-size: 17px; }
+  .doc span { color: var(--text-muted); font-size: 14px; }
+
+  @media (max-width: 600px) {
+    body { padding: 16px 12px 48px; }
+    main { border-radius: 18px; padding: 28px 20px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="brand"><a href="index.html">Building Health</a></p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : septembre 2026</p>
+
+    <p>Building Health est actuellement proposée dans le cadre d’une version bêta distribuée via Apple TestFlight.</p>
+    <p>La protection de la vie privée a été intégrée à la conception de l’application. Dans sa version actuelle, les informations relatives au logement sont traitées et conservées localement sur l’appareil de l’utilisateur.</p>
+
+    <h2>Données utilisées</h2>
+    <p>Selon l’utilisation de l’application, l’utilisateur peut introduire notamment :</p>
+    <ul>
+      <li>des informations relatives à son logement ;</li>
+      <li>l’adresse du logement ;</li>
+      <li>ses caractéristiques techniques ;</li>
+      <li>des informations relatives à son état ou à des problèmes observés ;</li>
+      <li>des photographies et des documents ;</li>
+      <li>des réponses à des questionnaires ;</li>
+      <li>un code postal, s’il souhaite recevoir des conseils adaptés à la météo.</li>
+    </ul>
+
+    <h2>Stockage local</h2>
+    <p>Dans la version actuelle de Building Health, les données relatives au logement sont conservées localement sur l’appareil de l’utilisateur.</p>
+    <p>Building Health n’exploite aucune base de données distante destinée à centraliser les logements, photographies, bilans, historiques ou réponses aux questionnaires. Il n’existe ni compte utilisateur, ni serveur Building Health.</p>
+    <p>Si la sauvegarde iCloud est activée sur l’iPhone, iOS copie les données de Building Health comme celles des autres applications installées. Cette sauvegarde relève des réglages de l’appareil et non de Building Health.</p>
+
+    <h2>Connexion à un service météo</h2>
+    <p>Building Health effectue une seule connexion vers l’extérieur, et uniquement si un code postal a été renseigné : elle interroge le service météo Open-Meteo afin d’adapter les conseils d’entretien.</p>
+    <p>Ce qui est transmis se limite au code postal saisi, puis à un point géographique arrondi au centième de degré, soit environ un kilomètre. Ni l’adresse, ni le nom du logement, ni les documents, ni aucune réponse aux questionnaires ne quittent l’appareil.</p>
+    <p>Aucune clé ni aucun compte n’est utilisé pour cet appel. Sans code postal, aucune connexion n’est établie et l’application fonctionne intégralement hors ligne.</p>
+
+    <h2>Localisation</h2>
+    <p>Building Health ne demande pas l’accès à la position de l’appareil et ne la lit jamais. Le seul repère géographique utilisé est le code postal saisi à la main par l’utilisateur, qu’il peut effacer à tout moment.</p>
+
+    <h2>Intelligence artificielle</h2>
+    <p>Building Health utilise certaines fonctionnalités d’intelligence artificielle basées sur les Apple Foundation Models.</p>
+    <p>Dans la version actuelle, le traitement est effectué directement sur l’appareil compatible. Building Health ne transmet pas les données du logement à un fournisseur d’IA externe pour cette fonctionnalité, et n’utilise à cette fin ni serveur Building Health ni clé d’API externe.</p>
+    <p>L’intelligence artificielle n’établit pas les niveaux, statuts ou résultats techniques de Building Health. Ces éléments sont calculés indépendamment par les règles de fonctionnement de l’application. L’IA intervient uniquement afin de présenter ou reformuler certaines informations de manière plus compréhensible.</p>
+    <p>Lorsque les fonctionnalités Apple nécessaires ne sont pas disponibles, Building Health continue à fonctionner sans cette couche d’explication : le bilan reste complet.</p>
+
+    <h2>Limites</h2>
+    <p>Les informations et bilans fournis par Building Health constituent des outils d’information, de prévention et d’aide à l’évaluation.</p>
+    <p>Ils ne constituent pas une expertise immobilière, une certification technique ou une inspection professionnelle du bâtiment.</p>
+    <p>Lorsque la situation le nécessite, une vérification par un professionnel qualifié doit être effectuée avant toute intervention importante ou décision susceptible d’avoir des conséquences sur le bâtiment.</p>
+
+    <h2>Photos et documents</h2>
+    <p>Les photos et documents ajoutés à Building Health sont utilisés uniquement pour les fonctionnalités auxquelles ils sont associés. Ils sont copiés dans l’espace de l’application, sur l’appareil, et ne sont pas transmis à Building Health.</p>
+    <p>L’utilisateur doit éviter d’intégrer inutilement dans ses photos des personnes, documents confidentiels ou informations personnelles sans rapport avec l’analyse du logement.</p>
+
+    <h2>TestFlight</h2>
+    <p>La bêta est distribuée via Apple TestFlight.</p>
+    <p>Apple peut traiter certaines informations nécessaires au fonctionnement du programme bêta, notamment des informations techniques, rapports de plantage, sessions et feedback transmis volontairement par le testeur.</p>
+
+    <h2>Analytics et publicité</h2>
+    <p>Building Health n’intègre aucun outil de mesure d’audience, de suivi publicitaire ou de rapport de plantage tiers.</p>
+    <p>Les données du logement ne sont pas utilisées à des fins publicitaires, et aucun profil publicitaire n’est créé à partir du contenu introduit dans l’application.</p>
+
+    <h2>Suppression</h2>
+    <p>Les données du logement étant conservées localement, l’utilisateur peut les supprimer depuis les fonctions prévues dans Building Health.</p>
+    <p>Une fonction « Effacer toutes mes données » permet de supprimer en une fois les informations locales associées à Building Health.</p>
+
+    <h2>Évolutions</h2>
+    <p>La présente politique devra être mise à jour si Building Health introduit ultérieurement des comptes utilisateurs, une synchronisation cloud, un serveur, une sauvegarde distante, un fournisseur d’IA externe, des paiements ou un partage avec des professionnels.</p>
+
+    <footer>
+      <p>Une question ? <a href="mailto:contact@buildinghealth.be">contact@buildinghealth.be</a></p>
+      <p><a href="conditions-beta.html">Conditions de la bêta</a></p>
+      <p>Ce texte est également consultable dans l’application, à l’identique.</p>
+    </footer>
+  </main>
+</body>
+</html>

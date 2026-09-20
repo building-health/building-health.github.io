@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Health — informations légales</title>
+<meta name="description" content="Politique de confidentialité et conditions de la bêta de Building Health.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --background: #F4F7F6;
+    --surface: #FFFFFF;
+    --text: #102A25;
+    --text-secondary: #5D6E69;
+    --text-muted: #87948F;
+    --primary: #176B5B;
+    --border: #E3EAE7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0D1714;
+      --surface: #16231F;
+      --text: #F4F7F6;
+      --text-secondary: #B7C4C0;
+      --text-muted: #8A9995;
+      --primary: #79B9A9;
+      --border: #24332E;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--background);
+    color: var(--text-secondary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 32px 20px 64px;
+  }
+
+  main {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 40px 32px;
+  }
+
+  .brand {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  .brand a { text-decoration: none; }
+
+  h1 { color: var(--text); font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { color: var(--text); font-size: 20px; margin: 36px 0 8px; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+
+  .updated { color: var(--text-muted); font-size: 14px; margin: 0 0 28px; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 44px;
+    padding-top: 20px;
+  }
+
+  a { color: var(--primary); }
+
+  .doc {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    display: block;
+    margin-top: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+  }
+
+  .doc strong { color: var(--primary); display: block; font-size: 17px; }
+  .doc span { color: var(--text-muted); font-size: 14px; }
+
+  @media (max-width: 600px) {
+    body { padding: 16px 12px 48px; }
+    main { border-radius: 18px; padding: 28px 20px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="brand">Building Health</p>
+    <h1>Informations légales</h1>
+    <p>Building Health est un carnet de santé pour votre logement, actuellement proposé en version
+      bêta via Apple TestFlight.</p>
+
+    <a class="doc" href="confidentialite.html">
+      <strong>Politique de confidentialité</strong>
+      <span>Ce que l’application conserve, où, et ce qui sort de votre appareil.</span>
+    </a>
+
+    <a class="doc" href="conditions-beta.html">
+      <strong>Conditions de la bêta</strong>
+      <span>Ce que la version de test garantit, et ce qu’elle ne garantit pas.</span>
+    </a>
+
+    <footer>
+      <p>Une question ? <a href="mailto:contact@buildinghealth.be">contact@buildinghealth.be</a></p>
+      <p>Dernière mise à jour : septembre 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
